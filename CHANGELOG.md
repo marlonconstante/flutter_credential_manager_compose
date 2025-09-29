@@ -92,3 +92,6 @@
 ### Documentation & CI
 - Enhanced README and overall documentation.
 - Updated static analysis and caching workflows in `static.yml` to improve CI efficiency.
+
+## 2.0.5
+- Fixed iOS Base64URL decoding for webauthn/passkey fields.
