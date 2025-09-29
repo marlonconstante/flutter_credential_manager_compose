@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:credential_manager/credential_manager.dart';
-import 'package:credential_manager_example/home_screen.dart';
+import 'package:flutter_credential_manager/flutter_credential_manager.dart';
+import 'package:flutter_credential_manager_example/home_screen.dart';
 import 'package:flutter/material.dart';
 
 const String googleClientId = "";

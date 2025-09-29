@@ -1,6 +1,6 @@
-import 'package:credential_manager/src/Models/google_user_model.dart';
-import 'package:credential_manager/src/Models/passkey/pass_key_response_model_sucess.dart';
-import 'package:credential_manager/src/Models/password_credentials.dart';
+import 'package:flutter_credential_manager/src/Models/google_user_model.dart';
+import 'package:flutter_credential_manager/src/Models/passkey/pass_key_response_model_sucess.dart';
+import 'package:flutter_credential_manager/src/Models/password_credentials.dart';
 
 /// Represents a set of various types of credentials.
 class Credentials {

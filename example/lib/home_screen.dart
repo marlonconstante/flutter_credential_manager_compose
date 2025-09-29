@@ -1,7 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:credential_manager/credential_manager.dart';
-import 'package:credential_manager_example/main.dart';
+import 'package:flutter_credential_manager/flutter_credential_manager.dart';
+import 'package:flutter_credential_manager_example/main.dart';
 import 'package:flutter/material.dart';
 
 enum Credential { password, passkey, google }

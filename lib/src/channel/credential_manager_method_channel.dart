@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:credential_manager/credential_manager.dart';
-import 'package:credential_manager/src/utils/parser.dart';
+import 'package:flutter_credential_manager/flutter_credential_manager.dart';
+import 'package:flutter_credential_manager/src/utils/parser.dart';
 import 'package:flutter/services.dart';
 
 /// Enum representing the different types of credentials.

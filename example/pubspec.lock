@@ -57,13 +57,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.2"
-  credential_manager:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "2.0.4"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -93,6 +86,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_credential_manager:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "2.0.5"
   flutter_driver:
     dependency: transitive
     description: flutter

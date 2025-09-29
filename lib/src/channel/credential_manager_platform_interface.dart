@@ -1,4 +1,4 @@
-import 'package:credential_manager/credential_manager.dart';
+import 'package:flutter_credential_manager/flutter_credential_manager.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 /// A platform-agnostic interface for managing credentials.

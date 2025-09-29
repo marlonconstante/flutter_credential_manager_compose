@@ -6,10 +6,10 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<credential_manager/CredentialManagerPlugin.h>)
-#import <credential_manager/CredentialManagerPlugin.h>
+#if __has_include(<flutter_credential_manager/CredentialManagerPlugin.h>)
+#import <flutter_credential_manager/CredentialManagerPlugin.h>
 #else
-@import credential_manager;
+@import flutter_credential_manager;
 #endif
 
 #if __has_include(<integration_test/IntegrationTestPlugin.h>)
