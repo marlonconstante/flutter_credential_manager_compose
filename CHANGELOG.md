@@ -98,3 +98,6 @@
 
 ## 2.0.6
 - Changed native package name on Android.
+
+## 2.0.7
+- Changed podspec file name on iOS.
