@@ -44,8 +44,8 @@ class PasskeyService: NSObject, ASAuthorizationControllerDelegate, ASAuthorizati
             let userName = registerRequest.user.name
             let challengeString = registerRequest.challenge
 
-            guard let challengeData = Data(base64Encoded: challengeString) ?? challengeString.data(using: .utf8)?.base64EncodedData(),
-                  let userIDData = Data(base64Encoded: userId) ?? userId.data(using: .utf8)?.base64EncodedData() else {
+            guard let challengeData = Data.fromBase64Url(challengeString),
+                  let userIDData = Data.fromBase64Url(userId) else {
                 result(FlutterError(code: CustomErrors.invalidData.description, message: "Invalid challenge or user ID", details: nil))
                 return
             }
@@ -108,7 +108,7 @@ class PasskeyService: NSObject, ASAuthorizationControllerDelegate, ASAuthorizati
         let rpId = passkeyLoginRequest.rpId
         let conditionalUI = passkeyLoginRequest.conditionalUI
 
-        guard let challengeData = Data(base64Encoded: challengeString) ?? challengeString.data(using: .utf8)?.base64EncodedData() else {
+        guard let challengeData = Data.fromBase64Url(challengeString) else {
             result(FlutterError(code: CustomErrors.invalidChallenge.description, message: "Invalid challenge", details: nil))
             return
         }

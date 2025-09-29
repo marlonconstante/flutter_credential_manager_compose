@@ -1,5 +1,5 @@
 //
-//  extenstion.swift
+//  Extensions.swift
 //  Pods
 //
 //  Created by Mobin on 05/10/24.
