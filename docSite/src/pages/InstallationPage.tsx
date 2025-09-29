@@ -12,7 +12,7 @@ const InstallationPage = () => {
         <CodeBlock 
           language="yaml" 
           code={`dependencies:
-  credential_manager: <latest_version>`} 
+  flutter_credential_manager: <latest_version>`} 
         />
       </div>
 

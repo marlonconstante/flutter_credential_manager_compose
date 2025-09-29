@@ -15,7 +15,7 @@ For more information, please refer to the [official documentation](https://devel
 Add the dependency to your pubspec.yaml file:
 
 ```yaml
-credential_manager: <latest_version>
+flutter_credential_manager: <latest_version>
 ```
 
 Or run:
