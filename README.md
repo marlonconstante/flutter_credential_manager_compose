@@ -1,4 +1,4 @@
-# Credential Manager
+# Flutter Credential Manager
 ![Android](https://img.shields.io/badge/Platforms-Android-green)
 ![iOS](https://img.shields.io/badge/Platforms-iOS-blue)
 
@@ -21,30 +21,5 @@ flutter_credential_manager: <latest_version>
 Or run:
 
 ```bash
-flutter pub add credential_manager
+flutter pub add flutter_credential_manager
 ```
-
-## Documentation
-
-For comprehensive guides and detailed documentation, please visit our [Documentation Page](https://djsmk123.github.io/flutter_credential_manager_compose/#/). Here you will find everything you need to get started, including API references, usage examples, and best practices for integrating Credential Manager into your application.
-
-## Support the Project
-
-If you find this library useful and would like to support its development, consider buying me a coffee:
-
-[☕ Buy Me a Coffee](https://www.buymeacoffee.com/smkwinner)
-
-## Looking for Maintainers
-
-We are looking for maintainers to help us keep this library up-to-date and implement new features. If you are interested in contributing, please reach out via [GitHub](https://github.com/Djsmk123/flutter_credential_manager_compose) or open an issue. Your help would be greatly appreciated!
-
-## Contributors
-
-Thanks to all the contributors who have helped make this library better!
-
-[![Contributors](https://contrib.rocks/image?repo=Djsmk123/flutter_credential_manager_compose)](https://github.com/Djsmk123/flutter_credential_manager_compose/graphs/contributors)
-
-
-
-
-

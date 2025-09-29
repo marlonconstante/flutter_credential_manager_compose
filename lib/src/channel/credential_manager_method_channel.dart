@@ -14,7 +14,7 @@ enum CredentialType {
 /// A class that handles credential management using method channels.
 class MethodChannelCredentialManager extends CredentialManagerPlatform {
   /// Method channel used to communicate with the native platform.
-  final methodChannel = const MethodChannel('credential_manager');
+  final methodChannel = const MethodChannel('flutter_credential_manager');
 
   /// Fetches the platform version.
   @override

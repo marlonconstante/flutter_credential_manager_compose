@@ -10,7 +10,7 @@ public class CredentialManagerPlugin: NSObject, FlutterPlugin{
     var preferImmediatelyAvailableCredentials: Bool = false
 
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "credential_manager", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "flutter_credential_manager", binaryMessenger: registrar.messenger())
         let instance = CredentialManagerPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }

@@ -2,7 +2,7 @@ name: flutter_credential_manager
 description: |
   A **fork** of the original Credential Manager plugin, featuring a **critical fix for iOS (Swift)**. 
   This version ensures correct **Base64URL handling** for challenges and IDs, enhancing WebAuthn/Passkey compliance and one-tap login functionality. Supports Google Credential Manager (Android) and Keychain (iOS).
-version: 2.0.5
+version: 2.0.6
 repository: https://github.com/marlonconstante/flutter_credential_manager_compose
 
 environment:
@@ -38,7 +38,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.smkwinner.cred_manager.credential_manager
+        package: com.flutter_credential_manager.credential_manager
         pluginClass: CredentialManagerPlugin
       ios:
         pluginClass: CredentialManagerPlugin

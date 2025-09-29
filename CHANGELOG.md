@@ -95,3 +95,6 @@
 
 ## 2.0.5
 - Fixed iOS Base64URL decoding for webauthn/passkey fields.
+
+## 2.0.6
+- Changed native package name on Android.

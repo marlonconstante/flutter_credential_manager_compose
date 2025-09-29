@@ -1,4 +1,4 @@
-package com.smkwinner.cred_manager.credential_manager
+package com.flutter_credential_manager.credential_manager
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
