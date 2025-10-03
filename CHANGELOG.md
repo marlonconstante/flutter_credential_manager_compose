@@ -104,3 +104,6 @@
 
 ## 2.0.8
 - Added support for allow credentials in passkey login on iOS.
+
+## 2.0.9
+- Added parsing and handling allow credentials in login request.
