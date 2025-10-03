@@ -101,3 +101,6 @@
 
 ## 2.0.7
 - Changed podspec file name on iOS.
+
+## 2.0.8
+- Added support for allow credentials in passkey login on iOS.

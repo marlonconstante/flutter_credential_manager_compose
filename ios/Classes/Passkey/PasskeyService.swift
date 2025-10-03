@@ -115,6 +115,7 @@ class PasskeyService: NSObject, ASAuthorizationControllerDelegate, ASAuthorizati
 
         let platformProvider = ASAuthorizationPlatformPublicKeyCredentialProvider(relyingPartyIdentifier: rpId)
         let request = platformProvider.createCredentialAssertionRequest(challenge: challengeData)
+        request.allowedCredentials = parseCredentials(credentialIDs: passkeyLoginRequest.allowCredentialIDs)
 
         let con = AuthenticateController { res in
             self.lock.unlock()
