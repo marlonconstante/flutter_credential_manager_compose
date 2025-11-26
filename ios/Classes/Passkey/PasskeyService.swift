@@ -11,9 +11,9 @@ import Flutter
 class PasskeyService: NSObject, ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
     var inFlightController: Cancellable?
     let lock = NSLock()
-     // Provide the presentation anchor for the authorization controller
-    public func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        return ASPresentationAnchor()
+    
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return WindowProvider.shared.getPresentationAnchor()
     }
     
     func registerPasskeyCredentials(call: FlutterMethodCall, result: @escaping FlutterResult) {
@@ -83,7 +83,6 @@ class PasskeyService: NSObject, ASAuthorizationControllerDelegate, ASAuthorizati
             }
             con.run(request: registrationRequest)
             inFlightController = con
-
         } catch {
             result(FlutterError(code: CustomErrors.jsonParsingError.description, message: error.localizedDescription, details: nil))
         }
@@ -91,7 +90,6 @@ class PasskeyService: NSObject, ASAuthorizationControllerDelegate, ASAuthorizati
 
     func getPasskeyCredentials(call: FlutterMethodCall, result: @escaping FlutterResult,
        preferImmediatelyAvailableCredentials: Bool = false  
-    
     ) {
         guard let args = call.arguments as? [String: Any],
               let passKeyOption = args["passKeyOption"] as? [String: Any] else {
@@ -149,5 +147,4 @@ class PasskeyService: NSObject, ASAuthorizationControllerDelegate, ASAuthorizati
             }
         }
     }
-
 }

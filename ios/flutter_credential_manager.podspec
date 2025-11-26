@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'flutter_credential_manager'
-  s.version          = '2.0.9'
+  s.version          = '2.0.10'
   s.summary          = 'Credential Manager plugin, helps with one-tap Login functionality and stores credentials in Google service account of user.'
   s.description      = <<-DESC
                        Credential Manager plugin for Flutter, providing one-tap login functionality and secure credential storage in the user's Google service account.

@@ -20,7 +20,6 @@ class RegisterController: NSObject, ASAuthorizationControllerDelegate, ASAuthori
     }
     
     func run(request: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest) {
-        
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
 
         authorizationController.delegate = self
@@ -42,7 +41,6 @@ class RegisterController: NSObject, ASAuthorizationControllerDelegate, ASAuthori
                 rawId: credentialRegistration.credentialID.toBase64URL(),
                 clientDataJSON: credentialRegistration.rawClientDataJSON.toBase64URL(),
                 attestationObject: credentialRegistration.rawAttestationObject!.toBase64URL()
-                
             )
             completion?(.success(response))
             break
@@ -65,34 +63,14 @@ class RegisterController: NSObject, ASAuthorizationControllerDelegate, ASAuthori
         return
     }
 
-
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        guard let delegate = UIApplication.shared.delegate else {
-            fatalError("Unable to find UIApplication delegate for presentationAnchor")
-        }
-        
-        if let flutterDelegate = delegate as? FlutterAppDelegate, let window = flutterDelegate.window {
-            return window
-        }
-        
-        // Try to get window from the app delegate using key-value coding
-        if let appDelegate = delegate as? NSObject, let window = appDelegate.value(forKey: "window") as? UIWindow {
-            return window
-        }
-        
-        // Fallback: try to get the first window from the scene
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let window = windowScene.windows.first {
-            return window
-        }
-        
-        fatalError("Unable to find a valid UIWindow for presentationAnchor")
+        return WindowProvider.shared.getPresentationAnchor()
     }
-
     
     func cancel() {
         cancelAuthorization?();
     }
+
     // Parse credentials from base64 URL strings
     private func parseCredentials(credentialIDs: [String]) -> [ASAuthorizationPlatformPublicKeyCredentialDescriptor] {
         return credentialIDs.compactMap {

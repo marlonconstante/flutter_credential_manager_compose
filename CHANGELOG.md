@@ -107,3 +107,6 @@
 
 ## 2.0.9
 - Added parsing and handling allow credentials in login request.
+
+## 2.0.10
+- Adjusted window retrieval for passkey registration and authentication on iOS, improving reliability of the WebAuthn prompt in embedded contexts.
